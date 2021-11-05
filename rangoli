@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t,r,c,i,j,m,n;
+    cin>>t;
+    while(t--)
+    {
+        cin>>r>>c;
+        m=3*r +1;
+        n=3*c +1;
+        char a[m+1][n+1];
+        for(i=1;i<=m;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if((j%3==2 || j%3==0) && (i%3==2 || i%3==0))
+                    a[i][j]='.';
+                else
+                a[i][j]='*';
+
+            }
+        }
+        for(i=1;i<=m;i++)
+        {
+            for(j=1;j<=n;j++)
+                cout<<a[i][j];
+            cout<<endl;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
