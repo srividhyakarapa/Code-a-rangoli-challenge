@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+ int t,r,c,i,j;
+ scanf("%d",&t);
+ while(t--)
+ {
+  scanf("%d%d",&r,&c);
+  for(i=0;i<3*r+1;i++)
+  {
+   for(j=0;j<3*c+1;j++)
+   {
+    if(i%3==0)
+    printf("*");
+    else
+    {
+     if(j%3==0)
+     printf("*");
+     else
+     printf(".");
+    }
+   }
+   printf("\n");
+  }
+  printf("\n");
+ }
+}
